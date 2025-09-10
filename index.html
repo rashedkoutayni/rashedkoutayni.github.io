@@ -3,81 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rashed Koutayni • Researcher @ DFKI</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Mhd Rashed Al Koutayni</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; max-width: 800px; }
+    img.profile { width: 150px; border-radius: 50%; display: block; margin: 0 auto; }
+    h1 { text-align: center; margin-top: 0.5rem; }
+    section { margin-top: 2rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 0.5rem; }
+    a { color: #0366d6; text-decoration: none; }
+    hr { margin: 3rem 0; }
+  </style>
 </head>
 <body>
-  <marquee>This is my page !</marquee>
-  <header>
-    <img src="profile.jpg" alt="Rashed Koutayni" class="profile-pic" />
-    <h1>Rashed Koutayni</h1>
-    <p>Scientific Researcher at <strong>DFKI Kaiserslautern</strong></p>
-  </header>
+  <!-- Profile -->
+  <img src="profile.jpg" alt="Mhd Rashed Al Koutayni" class="profile" />
+  <h1>Mhd Rashed Al Koutayni</h1>
+  <p style="text-align:center;">
+    Researcher, Augmented Vision – DFKI, Kaiserslautern, Germany<br/>
+    FPGA & Hardware-accelerated Computer Vision for Edge AI
+  </p>
+  <p style="text-align:center;">
+    <a href="mailto:Mhd_Rashed.Al_Koutayni@dfki.de">Email</a> • Phone: +49 631 20575 7448
+  </p>
+  <hr/>
 
+  <!-- Experience & Focus -->
   <section id="about">
-    <h2>About Me</h2>
+    <h2>About</h2>
     <p>
-      I am a PhD‑level researcher at DFKI (Deutsches Forschungszentrum für
-      Künstliche Intelligenz) in Kaiserslautern, Germany. My expertise lies in
-      hardware acceleration and embedded FPGA solutions for computer vision,
-      deep learning, and edge AI systems :contentReference[oaicite:2]{index=2}.
+      I'm a researcher at the Augmented Vision department of DFKI, working on FPGA/SoC-based acceleration of deep learning and computer vision for real-time, energy-efficient edge applications. My work spans embedded systems, disparity estimation, hand-pose recognition, and architectural optimization for edge-AI deployment.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li>
-        <strong>DeepEdgeSoC</strong>: An end-to-end deep‑learning framework for edge IoT devices, co-authored with G. Reis & D. Stricker :contentReference[oaicite:3]{index=3}.
-      </li>
-      <li>
-        <strong>Real‑Time Energy Efficient Hand Pose Estimation</strong>: 
-        FPGA‑based implementation achieving 4.2× speed-up and 577× energy efficiency vs GPU, published in <em>Sensors</em> (2020) :contentReference[oaicite:4]{index=4}.
-      </li>
-      <li>
-        <strong>dAIEDGE Use Cases</strong>: Developing FPGA-accelerated vision systems for Smart Cities and satellite imagery analysis :contentReference[oaicite:5]{index=5}.
-      </li>
-    </ul>
-  </section>
-
+  <!-- Publications -->
   <section id="publications">
     <h2>Publications</h2>
     <ul>
-      <li>
-        Alghoul, A., <strong>Al Koutayni, M.R.</strong>, et al. "MSDE: Multi-Scale Disparity Estimation Model From Stereo Images." <em>Journal of Autonomous Intelligence</em>, 2024 :contentReference[oaicite:6]{index=6}.
-      </li>
-      <li>
-        <strong>Al Koutayni, M.R.</strong>, Reis, G., Stricker, D. "DeepEdgeSoC: End‑to‑end deep learning framework for edge IoT devices." <em>Internet of Things</em>, 2023 :contentReference[oaicite:7]{index=7}.
-      </li>
-      <li>
-        <strong>Al Koutayni, M.R.</strong> et al. "Real‑Time Energy Efficient Hand Pose Estimation: A Case Study." <em>Sensors</em>, 2020 :contentReference[oaicite:8]{index=8}.
-      </li>
+      <li><strong>MSDE: Multi-Scale Disparity Estimation Model From Stereo Images</strong> (Journal of Autonomous Intelligence, 2024)</li>
+      <li><strong>DeepEdgeSoC: End-to-end deep learning framework for edge IoT devices</strong> (Internet of Things, 2023)</li>
+      <li><strong>Real-Time Energy Efficient Hand Pose Estimation: A Case Study</strong> (Sensors, 2020)</li>
+      <li><strong>Optimization strategies for neural network deployment on FPGA: An energy-efficient real-time face detection use case</strong> (Internet of Things, Sept 2025)</li>
     </ul>
   </section>
 
-  <section id="talks">
-    <h2>Talks & Interviews</h2>
-    <ul>
-      <li>
-        Interview on dAIEDGE about FPGA‑optimization in Smart Cities & satellite
-        projects :contentReference[oaicite:9]{index=9}.
-      </li>
-      <li>
-        Presentation on "FPGA Acceleration for SAR Imagery-Based Sea Ice Mapping" at EEAI/Edge‑AI 2024 :contentReference[oaicite:10]{index=10}.
-      </li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
+  <!-- Interview -->
+  <section id="media">
+    <h2>Media & Interviews</h2>
     <p>
-      📧 <a href="mailto:Mhd_Rashed.Al_Koutayni@dfki.de">Mhd_Rashed.Al_Koutayni@dfki.de</a><br />
-      📞 +49 631 20575 7448
+      Featured in a <em>dAIEDGE interview</em> about FPGA-based acceleration in Smart Cities and satellite imagery use cases.
     </p>
   </section>
 
-  <footer>
-    <p>© 2025 Rashed Koutayni • Built with GitHub Pages</p>
+  <!-- Footer -->
+  <hr/>
+  <footer style="text-align:center;">
+    © 2025 Mhd Rashed Al Koutayni • Hosted with GitHub Pages
   </footer>
 </body>
 </html>
