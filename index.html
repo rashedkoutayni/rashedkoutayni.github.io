@@ -5,60 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mhd Rashed Al Koutayni</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; max-width: 800px; }
-    img.profile { width: 150px; border-radius: 50%; display: block; margin: 0 auto; }
-    h1 { text-align: center; margin-top: 0.5rem; }
-    section { margin-top: 2rem; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    img.profile {
+      width: 160px;
+      border-radius: 50%;
+    }
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0366d6;
+      font-weight: bold;
+    }
+    section { margin-top: 3rem; }
+    h2 { border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
     ul { list-style: none; padding: 0; }
-    li { margin-bottom: 0.5rem; }
-    a { color: #0366d6; text-decoration: none; }
-    hr { margin: 3rem 0; }
+    li { margin-bottom: 0.75rem; }
+    a { color: #0366d6; }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid #0366d6;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+    .timeline-item {
+      margin-bottom: 1.5rem;
+    }
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #555;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <!-- Profile -->
-  <img src="profile.jpg" alt="Mhd Rashed Al Koutayni" class="profile" />
-  <h1>Mhd Rashed Al Koutayni</h1>
-  <p style="text-align:center;">
-    Researcher, Augmented Vision – DFKI, Kaiserslautern, Germany<br/>
-    FPGA & Hardware-accelerated Computer Vision for Edge AI
-  </p>
-  <p style="text-align:center;">
-    <a href="mailto:Mhd_Rashed.Al_Koutayni@dfki.de">Email</a> • Phone: +49 631 20575 7448
-  </p>
-  <hr/>
+  <!-- Header -->
+  <header>
+    <img src="profile.jpg" alt="Mhd Rashed Al Koutayni" class="profile" />
+    <h1>Mhd Rashed Al Koutayni</h1>
+    <p>Researcher @ <a href="https://av.dfki.de/">DFKI – Augmented Vision</a>, Kaiserslautern, Germany</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Experience & Focus -->
+  <!-- About -->
   <section id="about">
     <h2>About</h2>
     <p>
-      I'm a researcher at the Augmented Vision department of DFKI, working on FPGA/SoC-based acceleration of deep learning and computer vision for real-time, energy-efficient edge applications. My work spans embedded systems, disparity estimation, hand-pose recognition, and architectural optimization for edge-AI deployment.
+      I am a researcher at the Augmented Vision department of 
+      <a href="https://www.dfki.de/">DFKI</a>, focusing on FPGA and SoC-based 
+      acceleration of deep learning and computer vision for edge-AI applications. 
+      My work spans disparity estimation, hand-pose recognition, and 
+      architectural optimization for efficient real-time deployment.
     </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience & Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>Researcher</strong>, DFKI – Augmented Vision  
+        <span>2019 – Present, Kaiserslautern, Germany</span>
+      </div>
+      <div class="timeline-item">
+        <strong>PhD Studies</strong>, TU Kaiserslautern  
+        <span>2019 – Present</span>
+      </div>
+      <div class="timeline-item">
+        <strong>MSc Electrical & Computer Engineering</strong>, Lebanese University  
+        <span>2016 – 2018</span>
+      </div>
+    </div>
   </section>
 
   <!-- Publications -->
   <section id="publications">
-    <h2>Publications</h2>
+    <h2>Selected Publications</h2>
     <ul>
-      <li><strong>MSDE: Multi-Scale Disparity Estimation Model From Stereo Images</strong> (Journal of Autonomous Intelligence, 2024)</li>
-      <li><strong>DeepEdgeSoC: End-to-end deep learning framework for edge IoT devices</strong> (Internet of Things, 2023)</li>
-      <li><strong>Real-Time Energy Efficient Hand Pose Estimation: A Case Study</strong> (Sensors, 2020)</li>
-      <li><strong>Optimization strategies for neural network deployment on FPGA: An energy-efficient real-time face detection use case</strong> (Internet of Things, Sept 2025)</li>
+      <li><strong>MSDE: Multi-Scale Disparity Estimation Model From Stereo Images</strong> — Journal of Autonomous Intelligence, 2024</li>
+      <li><strong>DeepEdgeSoC: End-to-end deep learning framework for edge IoT devices</strong> — Internet of Things, 2023</li>
+      <li><strong>Real-Time Energy Efficient Hand Pose Estimation: A Case Study</strong> — Sensors, 2020</li>
+      <li><strong>Optimization strategies for neural network deployment on FPGA</strong> — Internet of Things, 2025</li>
     </ul>
+    <p>See full list on <a href="https://scholar.google.com/citations?hl=en&user=vyHpeioAAAAJ">Google Scholar</a>.</p>
   </section>
 
-  <!-- Interview -->
+  <!-- Media -->
   <section id="media">
     <h2>Media & Interviews</h2>
     <p>
-      Featured in a <em>dAIEDGE interview</em> about FPGA-based acceleration in Smart Cities and satellite imagery use cases.
+      Featured in a <a href="https://daiedge.eu/news/interview-mhd-rashed-daiedge-use-cases">dAIEDGE interview</a> 
+      on FPGA acceleration for Smart Cities and satellite imagery.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:Mhd_Rashed.Al_Koutayni@dfki.de">Mhd_Rashed.Al_Koutayni@dfki.de</a><br/>
+      📞 +49 631 20575 7448
+    </p>
+    <p>
+      🔗 <a href="https://www.researchgate.net/profile/Mhd-Rashed-Al-Koutayni">ResearchGate</a> •
+      <a href="https://scholar.google.com/citations?hl=en&user=vyHpeioAAAAJ">Google Scholar</a> •
+      <a href="https://www.linkedin.com/in/rashed-koutayni/">LinkedIn</a>
     </p>
   </section>
 
   <!-- Footer -->
-  <hr/>
-  <footer style="text-align:center;">
-    © 2025 Mhd Rashed Al Koutayni • Hosted with GitHub Pages
+  <footer>
+    © 2025 Mhd Rashed Al Koutayni • Built with GitHub Pages
   </footer>
 </body>
 </html>
